@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SatyaBama Engineering College</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Student Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration and check up the new Courses</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">pharmacy</a>
+								<a class="dropdown-item" href="course-grid-3.html">Bachelor Of Engineering</a>
+								<a class="dropdown-item" href="course-grid-4.html">Study Of Law</a>
+							</div>
+						</li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Sections</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Facilities </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+						
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Register</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Facilities at SatyaBama<span class="m_1">There are various types of facilities at SatyaBama</span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead">More than 20+ facilities at SatyaBama Engineering College</p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/bg1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="meta-info-blog">
+						</div>
+						<div class="blog-title">
+							<h2><a href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure" title="">Library</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>Sathyabama University has a central library with a total area of 25,000 square feet.The library has a collection of 60,000 books.It has subscription of 334 national and international journals.and subcribes to MALIBNET(Madras Library Network), IIT Library and British Council library through which we can access the library in and around Chennai City.</p>
+						</div>
+						<div class="blog-button">
+							<a class="hover-btn-new orange" href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure"><span>Read More<span></a>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/bg2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="meta-info-blog">	
+						</div>
+						<div class="blog-title">
+							<h2><a href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure" title="">Cafeteria</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>LA large Mess Hall with a capacity of 2000 members to dine at the same time enables all students and staff to have lunch and breakfast. A modem bakery and ice-cream making unit are attached to the mess. There is a separate floor one each for Vegetarian and Non-Vegetarian in the Mess Block to dine. </p>
+						</div>
+						<div class="blog-button">
+							<a class="hover-btn-new orange" href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure"><span>Read More</span></a>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/bg3.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2><a href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure" title="">Hostel</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>There are 5 boys hostels, and 5 Girls hostels.The University Hostels have Spacious Rooms with facility of STD/ISD Telephone, Study Room, ATM, Medical Lab, Open Air Theatre, Gym, Yoga and Dance Classes, Juice Centre, Laundary, Salon, Train Reservation Facility, Computer Lab, etc. </p>
+						</div>
+						<div class="blog-button">
+							<a class="hover-btn-new orange" href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure"><span>Read More</span></a>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="hr3"> 
+
+            <div class="row"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                   <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/bg4.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2><a href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure" title="">Sports Complex</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>Available Facilities: Badminton Court|Basketball Court|Cricket Ground|Football Ground|Tennis Court|400 Mt. Track|Volley Ball Court|Handball Field|Kho-Kho Court|Kabaddi Court|Throw Ball Field|Hockey Ground|Table Tennis </p>
+						</div>
+						<div class="blog-button">
+							<a class="hover-btn-new orange" href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure"><span>Read More</span></a>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/bg5.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2><a href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure" title="">Shuttle Service</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>Sathyabama University has more than 100 buses which are made available to the students and the faculty members for commuting from various points in the city and also from the suburbs.For the benefit of those students who attend special classes, using Internet facility, library etc., special buses are arranged everyday which leave the campus at 6 p.m. </p>
+						</div>
+						<div class="blog-button">
+							<a class="hover-btn-new orange" href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure"><span>Read More</span></a>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/bg6.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="blog-title">
+							<h2><a href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure" title="">Labs</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>Available Facilities: Civil Engineering Lab|Chemistry Lab|Computer Lab|Electrical Lab|Electronics Lab|Mechanical Lab|Physics Lab|Concrete Lab|Soil Mechanics Lab|Fluid Mechanics Lab|Survey Lab|Microprocessor Lab|RDBMS Lab|Internet Programming &. Net Lab|Case Tools & Software Development Lab|VLSI Lab|Embedded Systems Lab|Communication Lab|OOPS & Data Structures Lab|Thermal Engg & Fluid Machine Lab|Measurement & Instrumentation Lab|Bioseparation & Downstream Processing Lab </p>
+						</div>
+						<div class="blog-button">
+							<a class="hover-btn-new orange" href="https://www.shiksha.com/university/sathyabama-institute-of-science-and-technology-chennai-23588/infrastructure"><span>Read More</span></a>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.hdfcbank.com/"><img src="images/logo_1.0.png" alt="hdfc-bank" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.ril.com/"><img src="images/logo_2.0.png" alt="relaince industries" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.bosch.com/"><img src="images/logo_3.0.png" alt="The bosch" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.samsung.com/in/"><img src="images/logo_4.0.png" alt="samsung" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.tvsmotor.com/"><img src="images/logo_5.0.png" alt="TVs Motors" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.tatamotors.com/"><img src="images/logo_6.0.png" alt="Tata Motors" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Sathyabama Institute of Science and Technology (SIST), formerly Sathyabama University, is a private deemed to be university, situated at Chennai, Tamil Nadu, India. It was founded in 1987 as Sathyabama Engineering College by Jeppiaar and received its deemed to be university status in 2001.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/SathyabamaOfficial/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/sathyabamaSIST"><i class="fa fa-twitter"></i></a></li>
+
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="https://www.sathyabama.ac.in/">www.sathyabama.ac.in</a></li>
+                            <li>Sathyabama University Canteen, Sathyabama University,Jeppiaar Nagar,Rajiv Gandhi Road, Mess Rd, Kamaraj Nagar, Semmancheri, Chennai, Tamil Nadu 600119</li>
+                            <li>+61 3 8376 6284</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+</div><!-- end row -->
+</div><!-- end container -->
+</footer><!-- end footer -->
+<div class="copyrights">
+<div class="container">
+	<div class="footer-distributed">
+		<div class="footer-center">                   
+			<p class="footer-company-name">TOP leading College: <a href="#">SatyaBama</a> Design By : <a href="#">Alex Christian</a></p>
+		</div>
+	</div>
+</div><!-- end container -->
+</div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

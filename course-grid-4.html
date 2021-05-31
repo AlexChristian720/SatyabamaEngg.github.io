@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SatyaBama Engineering College</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Student Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration and check up the new Courses</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">pharmacy</a>
+								<a class="dropdown-item" href="course-grid-3.html">Bachelor Of Engineering</a>
+								
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Blog </a>
+								
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+						
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Register</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Study Of Law<span class="m_1">Law, or legal studies, comes into contact with almost every area of human life, touching upon issues relating to business, economics, politics, the environment, human rights, international relations and trade.</span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead">It is telling that the first academic degrees developed were all related to law.</p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.shiksha.com/b-a-ll-b-honours-hons-chp#:~:text=The%20Bachelor%20of%20Arts%20and,as%20well%20as%20Law%20subjects." title="">B.A. LL.B. (Hons.)</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>The Bachelor of Arts and Bachelor of Legislative Law (BA LLB) Honours is a professional law degree that candidates can pursue right after Class 12th. An integrated course, BA LLB (Hons) is of five years duration law programme. In a BA LLB (Hons) course candidates are taught Arts as well as Law subjects. </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.shiksha.com/bba-ll-b-honours-hons-chp" title="">	B.B.A. LL.B. (Hons.)</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p> BBA LLB (Hons) - Full Form (Bachelor of Business Administration & Bachelor of Legislative Law (Hons)) course is an integrated course and on completion of this course, aspirants are awarded a professional degree. The duration of a BBA LLB (Hons) course is five years. The maximum duration within which students need to complete their BBA LLB (Hons) course is eight years. As part of an integrated BBA LLB (Hons) course, candidates have imparted education through various methods such as classroom teaching, case studies and moot courts.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+							
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->	
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law3.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.shiksha.com/b-com-ll-b-chp" title="">B.Com.LL.B. (Hons.)</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>BCom LLB is a professional law programme which is of five years duration. Bachelor of Commerce and Bachelor of Legislative Law (BCom LLB) is an integrated course wherein aspirants are taught both commerce and law subjects. Some Commerce subjects that aspirants study as part of BCom LLB course are Business Statistics, Business Communication, Auditing, Economics, etc.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law4.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.shiksha.com/ll-b-chp" title="">LL.B.</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Legum Baccalaureus or LLB is a three-year Bachelor of Law degree that is offered to aspirants by many renowned colleges in India. However, candidates can pursue this law course only if they possess a graduation degree. The three-year LLB course offered at all law colleges of India is regulated and closely supervised by the Bar Council of India (BCI).</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->			
+			
+			<hr class="hr3"> 
+			
+            <div class="row"> 
+				<div class="col-lg-3 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law5.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.jagranjosh.com/careers/law-1296555438-1" title="">Criminal Lawyer</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Specialises in criminal laws CrPC, IPC, Evidence Act and various other penal laws.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law6.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.jagranjosh.com/careers/law-1296555438-1" title="">civil litigation lawyer</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>Specializes in civil laws e.g. taxation laws, excise laws. </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law7.jpg" alt="" class="img-fluid">
+						</div>		
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.collegedekho.com/careers/document-drafting-lawyer" title="">Document Drafting Lawyer</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>A Document Drafting Lawyer is a law expert whose role is to draft legal documents and ensure that they identify all the relevant facts and law. Document drafting is an area of practice that many lawyers want to improve upon. Document Drafting Lawyers have to make sure that their client's legal documents are clear, relevant, accurate, and enforceable from the start so that matters are simplified for everyone involved. These lawyers go through all legal documents, draft them as per the law and then apply them to prepare a document that accomplishes their client's goals.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/law8.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="https://www.jobhero.com/career-guides/interviews/prep/what-is-a-legal-advisor#:~:text=A%20Legal%20Advisor%20is%20essentially,a%20large%20corporation%20or%20organization.&text=They%20also%20provide%20general%20legal,legal%20departments%20of%20large%20corporations." title="">Legal Advisor</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>A Legal Advisor is essentially a lawyer who provides legal counsel to a large corporation or organization. ... They also provide general legal advice about corporate decisions regarding corporate growth, mergers or other practices. Legal Advisors generally work in the legal departments of large corporations.</p>
+							</div>	
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i>5 Years</li>
+								
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+	<div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.hdfcbank.com/"><img src="images/logo_1.0.png" alt="hdfc-bank" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.ril.com/"><img src="images/logo_2.0.png" alt="relaince industries" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.bosch.com/"><img src="images/logo_3.0.png" alt="The bosch" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.samsung.com/in/"><img src="images/logo_4.0.png" alt="samsung" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.tvsmotor.com/"><img src="images/logo_5.0.png" alt="TVs Motors" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="https://www.tatamotors.com/"><img src="images/logo_6.0.png" alt="Tata Motors" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Sathyabama Institute of Science and Technology (SIST), formerly Sathyabama University, is a private deemed to be university, situated at Chennai, Tamil Nadu, India. It was founded in 1987 as Sathyabama Engineering College by Jeppiaar and received its deemed to be university status in 2001.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/SathyabamaOfficial/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/sathyabamaSIST"><i class="fa fa-twitter"></i></a></li>
+
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="https://www.sathyabama.ac.in/">www.sathyabama.ac.in</a></li>
+                            <li>Sathyabama University Canteen, Sathyabama University,Jeppiaar Nagar,Rajiv Gandhi Road, Mess Rd, Kamaraj Nagar, Semmancheri, Chennai, Tamil Nadu 600119</li>
+                            <li>+61 3 8376 6284</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+	<div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">TOP leading College: <a href="#">SatyaBama</a> Design By : <a href="#">Alex Christian</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
